@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-	    git credentialsId: 'bd8cbf0a-a257-422d-90dd-ac9175393dac', url: 'hthttps://github.com/OCTO01032020-araju/mysql_git_image.git'
+	    git branch: 'main', credentialsId: 'bd8cbf0a-a257-422d-90dd-ac9175393dac', url: 'https://github.com/OCTO01032020-araju/mysql_git_image.git'
       }
     }
     stage('Building image') {
